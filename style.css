@@ -303,3 +303,76 @@ nav .right a span {
     flex-wrap: wrap;
   }
 
+
+
+
+
+  /* 📱 Responsive design for mobile screens */
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: row;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  nav .right a {
+    display: block;
+    margin: 8px 0;
+  }
+  nav .right  {
+    flex-direction: row;
+    display: block;
+    margin: 8px 0;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .hero-section .headshot {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .hero-section .headshot img {
+    width: 200px;
+  }
+
+  .skills-section,
+  .college-life,
+  .contact {
+    padding: 30px 20px;
+  }
+
+  .skills-section .cells {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-item {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section .text h2 {
+    font-size: 28px;
+  }
+
+  .hero-section .text p {
+    font-size: 15px;
+  }
+
+  nav .right a span {
+    display: none;
+  }
+}
