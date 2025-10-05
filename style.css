@@ -376,3 +376,42 @@ nav .right a span {
     display: none;
   }
 }
+
+
+#name {
+  font-size: 2rem;               /* Large, eye-catching font */
+  font-weight: bold;
+  color: #4a76ee;                /* Stylish blue color */
+  text-align: center;
+  margin: 2rem 0;
+  letter-spacing: 2px;           /* Spacing between letters */
+  position: relative;
+  animation: fadeInScale 1.5s ease-out forwards;
+}
+
+/* Optional pseudo-element for a cool underline effect */
+#name::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 4px;
+  background: #4a76ee;
+  margin: 8px auto 0;
+  transition: width 0.5s ease-in-out;
+}
+
+#name:hover::after {
+  width: 50%;
+}
+
+/* Animation for heading */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
